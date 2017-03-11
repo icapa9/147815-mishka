@@ -8,19 +8,14 @@
     <header class="header">
       <div class="header__wrap">
         <div class="logo">
-          <a href="#"><img src="http://placehold.it/150x100" alt="logo"></a>
+          <a href="index.html"><img src="http://placehold.it/150x100" alt="logo"></a>
         </div>
         <div class="menu">
           <ul class="menu__list">
-            <li class="menu__item"><a href="#">Каталог товаров</a></li>
-            <li class="menu__item"><a href="#">Вязание на заказ</a></li>
-            <li class="menu__item">
-              <div class="search">
-                <input type="text" name="" value="Поиск по сайту">
-              </div>
-            </li>
-            <li class="menu-item">
-              <a href="#">Корзина</a></li>
+            <li class="menu__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="menu__item"><a>Вязание на заказ</a></li>
+            <li class="menu__item"><a href="#">Поиск по сайту</a></li>
+            <li class="menu-item"><a href="#">Корзина</a></li>
           </ul>
         </div>
       </div>
@@ -29,15 +24,15 @@
       <section class="custom-order">
         <h1>Вязание на заказ</h1>
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="form__type">
-            <legend>тип</legend>
+          <div class="form__type">
+            <h2>тип</h2>
             <input type="radio" name="type" value="accessory" id="accessory" checked>
             <label for="accessory">Аксессуар для интерьера</label>
             <input type="radio" name="type" value="toys" id="toys">
             <label for="toys">Детская игрушка</label>
-          </fieldset>
-          <fieldset class="form__color">
-            <legend>цвет</legend>
+          </div>
+          <div class="form__color">
+            <h2>цвет</h2>
             <input type="checkbox" name="white" id="white" checked>
             <label for="white">Белый</label>
             <input type="checkbox" name="grey" id="grey" checked>
@@ -50,46 +45,40 @@
             <label for="pink">Розовый</label>
             <input type="checkbox" name="orange" id="orange">
             <label for="orange">Оранжевый</label>
-          </fieldset>
-          <fieldset class="form_id">
-            <legend>фио</legend>
+          </div>
+          <div class="form_id">
+            <h2>фио</h2>
             <label for="name">Имя:</label>
             <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
             <label for="surname">Фамилия:</label>
             <input type="text" name="surname" id="surname" placeholder="Введите вашу фамилию*" required>
             <label for="middle-name">Отчество:</label>
             <input type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
-          </fieldset>
-          <fieldset class="form__tel">
-            <legend>тел</legend>
+          </div>
+          <div class="form__tel">
+            <h2>тел</h2>
             <input type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
-          </fieldset>
-          <fieldset class="form__email">
-            <legend>e-mail</legend>
+          </div>
+          <div class="form__email">
+            <h2>e-mail</h2>
             <input type="email" name="email" placeholder="Ваш Email*" required>
-          </fieldset>
-          <fieldset class="form__add-info">
-            <legend>доп</legend>
+          </div>
+          <div class="form__add-info">
+            <h2>доп</h2>
             <textarea name="add-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </fieldset>
-          <span>*Поля обязательны для заполнения</span>
-          <button type="sumbit">отправить заказ</button>
+          </div>
+          <span><sup>&#9913;</sup>Поля обязательны для заполнения</span>
+          <button type="submit">отправить заказ</button>
         </form>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__wrap">
-        <div class="socials">
-          <div class="social__item  social__item--inst">
-
-          </div>
-          <div class="social__item  social__item--vk">
-
-          </div>
-          <div class="social__item  social__item--tw">
-
-          </div>
-        </div>
+        <ul class="socials">
+          <li><a href="#">inst</a></li>
+          <li><a href="#">vk</a></li>
+          <li><a href="#">tw</a></li>
+        </ul>
         <div class="footer__copyrigth">
           <span>Разработано</span>
         </div>

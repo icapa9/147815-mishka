@@ -8,38 +8,35 @@
     <header class="header">
       <div class="header__wrap">
         <div class="logo">
-          <a href="#"><img src="http://placehold.it/150x100" alt="logo"></a>
+          <a><img src="http://placehold.it/150x100" alt="logo"></a>
         </div>
         <div class="menu">
           <ul class="menu__list">
-            <li class="menu__item"><a href="#">Каталог товаров</a></li>
-            <li class="menu__item"><a href="#">Вязание на заказ</a></li>
-            <li class="menu__item">
-              <div class="search">
-                <input type="text" name="" value="Поиск по сайту">
-              </div>
-            </li>
-            <li class="menu-item">
-              <a href="#">Корзина</a></li>
+            <li class="menu__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="menu__item"><a href="form.html">Вязание на заказ</a></li>
+            <li class="menu__item"><a href="#">Поиск по сайту</a></li>
+            <li class="menu-item"><a href="#">Корзина</a></li>
           </ul>
         </div>
       </div>
     </header>
     <main>
-      <section class="goods">
-        <div class="goods__wrap">
-          <h1>Милые штуки ручной работы для дома</h1>
+      <section class="main-title">
+        <h1>Милые штуки ручной работы для дома</h1>
+      </section>
+      <section class="product-type">
+        <div class="product">
           <a href="#">Предметы интерьера</a>
           <a href="#">Детские игрушки</a>
         </div>
       </section>
-      <section class="catalog">
-        <div class="catalog__wrap">
-          <article class="catalog-item  catalog-item--week">
-            <h2><a href="#">Вязаные корзинки</a></h2>
+      <section class="product-week">
+        <div class="product-week__wrap">
+          <article class="product-week__item">
+            <h1>Вязаные корзинки</h1>
             <span>Товар недели</span>
-            <p class="catalog-item__info">Экологически чистая пряжа, ручная работа. Доступны в шести разцветках, и трех размерах</p>
-            <table class="catalog-item__info-table">
+            <p class="product-week__info">Экологически чистая пряжа, ручная работа. Доступны в шести разцветках, и трех размерах</p>
+            <table class="product-week__info-table">
               <tr>
                 <td>Цвет:</td>
                 <td>"Тиффани"/серый</td>
@@ -57,19 +54,11 @@
             <span>Цена: 990руб.</span>
             <a href="#">заказать</a>
           </article>
-          <div class="catalog__popup">
-            <span>добавить в корзину</span>
-            <span>выберете размер:</span>
-            <button type="button" name="button">s</button>
-            <button type="button" name="button">m</button>
-            <button type="button" name="button">l</button>
-            <a href="#">добавить</a>
-          </div>
         </div>
       </section>
       <section class="about">
         <div class="about__wrap">
-          <h2 class="about__caption">Коротко о нас</h2>
+          <h1 class="about__caption">Коротко о нас</h1>
           <ul class="about__list">
             <li class="about__item">Экологически чистые материалы</li>
             <li class="about__item">Скандинавский стиль по российской цене</li>
@@ -87,10 +76,10 @@
               <p>Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <cite>@misssssiskras</cite>
             </blockquote>
-            <h3 class="review__author">Анастасия Красильникова</h3>
+            <h1 class="review__author">Анастасия Красильникова</h1>
             <div class="review__controls">
-              <button class="button  button--prev" type="button" name="button"><</button>
-              <button class="button  button--next" type="button" name="button">></button>
+              <button class="button  button--prev" type="button" name="button">&lt;</button>
+              <button class="button  button--next" type="button" name="button">&gt;</button>
             </div>
             <a href="#">написать</a>
           </article>
@@ -114,21 +103,28 @@
     </main>
     <footer class="footer">
       <div class="footer__wrap">
-        <div class="socials">
-          <div class="social__item  social__item--inst">
-
-          </div>
-          <div class="social__item  social__item--vk">
-
-          </div>
-          <div class="social__item  social__item--tw">
-
-          </div>
-        </div>
+        <ul class="socials">
+          <li><a href="#">inst</a></li>
+          <li><a href="#">vk</a></li>
+          <li><a href="#">tw</a></li>
+        </ul>
         <div class="footer__copyrigth">
           <span>Разработано</span>
         </div>
       </div>
     </footer>
+    <section class="popups">
+      <form class="popup" action="https://echo.htmlacademy.ru/" method="post">
+        <h1>добавить в корзину</h1>
+        <span>Выберете размер:</span>
+        <input type="radio" name="s" id="s" required>
+        <input type="radio" name="s" id="m" required>
+        <input type="radio" name="s" id="l" required>
+        <label for="s">s</label>
+        <label for="m">m</label>
+        <label for="l">l</label>
+        <button type="submit">добавить</button>
+      </form>
+    </section>
   </body>
 </html>
