@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page">
     <header class="header">
       <div class="header__wrap">
         <div class="logo">
-          <a><img src="http://placehold.it/150x100" alt="logo"></a>
+          <a><img src="http://placehold.it/150x100" width="150" height="100" alt="logo"></a>
         </div>
         <div class="menu">
           <ul class="menu__list">
@@ -52,7 +53,7 @@
                 <td>15 см</td>
               </tr>
             </table>
-            <a href="#"><img src="http://placehold.it/150x100" alt="image-item"></a>
+            <a href="#"><img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="image-item"></a>
             <span>Цена: 990руб.</span>
             <a href="#">заказать</a>
           </article>
@@ -73,23 +74,24 @@
       </section>
       <section class="reviews">
         <div class="reviews__wrap">
+          <h1>Отзывы</h1>
           <article class="review">
             <blockquote class="review__text">
               <p>Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <cite>@misssssiskras</cite>
             </blockquote>
             <h1 class="review__author">Анастасия Красильникова</h1>
-            <div class="review__controls">
-              <button class="button  button--prev" type="button" name="button">&lt;</button>
-              <button class="button  button--next" type="button" name="button">&gt;</button>
-            </div>
-            <a href="#">написать</a>
           </article>
+          <div class="review__controls">
+            <button class="button  button--prev" type="button" name="button">&lt;</button>
+            <button class="button  button--next" type="button" name="button">&gt;</button>
+          </div>
+          <a href="#">написать</a>
         </div>
       </section>
       <section class="contacts">
         <div class="contacts__wrap">
-          <h3>Контакты</h3>
+          <h2>Контакты</h2>
           <address>
             <span>e-mail:</span>
             <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
@@ -97,7 +99,7 @@
             <p>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
           </address>
           <div class="contacts__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6544926895895!2d30.32284726454108!3d59.937875156918345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1489165816204" width="400" height="300"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6544926895895!2d30.32284726454108!3d59.937875156918345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1489165816204" width="320" height="457"></iframe>
           </div>
           <a href="#">напишите нам</a>
         </div>
@@ -110,12 +112,12 @@
           <li><a href="#">vk</a></li>
           <li><a href="#">tw</a></li>
         </ul>
-        <div class="footer__copyrigth">
+        <div class="footer__copyright">
           <span>Разработано</span>
         </div>
       </div>
     </footer>
-    <section class="popups">
+    <section class="popup">
       <form class="popup__form" action="https://echo.htmlacademy.ru/" method="post">
         <h1>добавить в корзину</h1>
         <span>Выберете размер:</span>

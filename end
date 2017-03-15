@@ -1,0 +1,182 @@
+[1mdiff --git a/catalog.html b/catalog.html[m
+[1mindex 283afd3..a8c89c8 100644[m
+[1m--- a/catalog.html[m
+[1m+++ b/catalog.html[m
+[36m@@ -3,8 +3,9 @@[m
+   <head>[m
+     <meta charset="utf-8">[m
+     <title>HTML Academy: Мишка - Каталог</title>[m
+[32m+[m[32m    <link rel="stylesheet" href="css/style.css">[m
+   </head>[m
+[31m-  <body>[m
+[32m+[m[32m  <body class="page">[m
+     <header class="header">[m
+       <div class="header__wrap">[m
+         <div class="logo">[m
+[36m@@ -22,22 +23,22 @@[m
+     </header>[m
+     <main>[m
+       <section class="catalog">[m
+[32m+[m[32m        <h1>Каталог товаров</h1>[m
+         <div class="catalog__wrap">[m
+[31m-          <h1>Каталог товаров</h1>[m
+           <article class="catalog__item">[m
+[31m-            <a href="#"><img src="http://placehold.it/150x100" alt="image-item"></a>[m
+[32m+[m[32m            <a href="#"><img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="image-item"></a>[m
+             <a href="#"><h1>Зайчик-попрыгайчик</h1></a>[m
+             <p class="catalog-item__info">Рост 30 см, вес 200 г</p>[m
+             <span>1200 руб.</span>[m
+           </article>[m
+           <article class="catalog__item">[m
+[31m-            <a href="#"><img src="http://placehold.it/150x100" alt="image-item"></a>[m
+[32m+[m[32m            <a href="#"><img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="image-item"></a>[m
+             <a href="#"><h1>Корзинка для белья</h1></a>[m
+             <p class="catalog-item__info">Диаметр 15 см, высота 10 см</p>[m
+             <span>690 руб.</span>[m
+           </article>[m
+           <article class="catalog__item">[m
+[31m-            <a href="#"><img src="http://placehold.it/150x100" alt="image-item"></a>[m
+[32m+[m[32m            <a href="#"><img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="image-item"></a>[m
+             <a href="#"><h1>Большая корзинка для игрушек</h1></a>[m
+             <p class="catalog-item__info">Диаметр 30 см, высота 30 см</p>[m
+             <span>1500 руб.</span>[m
+[36m@@ -47,7 +48,7 @@[m
+       <section class="production">[m
+         <h2>Процесс производства</h2>[m
+         <div class="production__video">[m
+[31m-          <img src="http://placehold.it/150x100" alt="video-preview">[m
+[32m+[m[32m          <img src="img/video-mobile@1x.jpg" width="260" height="150" alt="video-preview">[m
+         </div>[m
+         </video>[m
+         <p class="production__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>[m
+[36m@@ -61,12 +62,12 @@[m
+           <li><a href="#">vk</a></li>[m
+           <li><a href="#">tw</a></li>[m
+         </ul>[m
+[31m-        <div class="footer__copyrigth">[m
+[32m+[m[32m        <div class="footer__copyright">[m
+           <span>Разработано</span>[m
+         </div>[m
+       </div>[m
+     </footer>[m
+[31m-    <section class="popups">[m
+[32m+[m[32m    <section class="popup">[m
+       <form class="popup__form" action="https://echo.htmlacademy.ru/" method="post">[m
+         <h1>добавить в корзину</h1>[m
+         <span>Выберете размер:</span>[m
+[1mdiff --git a/form.html b/form.html[m
+[1mindex 25fd4cd..2551165 100644[m
+[1m--- a/form.html[m
+[1m+++ b/form.html[m
+[36m@@ -3,8 +3,9 @@[m
+   <head>[m
+     <meta charset="utf-8">[m
+     <title>HTML Academy: Мишка - Форма</title>[m
+[32m+[m[32m    <link rel="stylesheet" href="css/style.css">[m
+   </head>[m
+[31m-  <body>[m
+[32m+[m[32m  <body class="page">[m
+     <header class="header">[m
+       <div class="header__wrap">[m
+         <div class="logo">[m
+[36m@@ -24,6 +25,7 @@[m
+       <section class="custom-order">[m
+         <h1>Вязание на заказ</h1>[m
+         <form class="form" action="https://echo.htmlacademy.ru/" method="post">[m
+[32m+[m[32m          <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>[m
+           <div class="form__type">[m
+             <h2>тип</h2>[m
+             <input type="radio" name="type" value="accessory" id="accessory" checked>[m
+[36m@@ -79,7 +81,7 @@[m
+           <li><a href="#">vk</a></li>[m
+           <li><a href="#">tw</a></li>[m
+         </ul>[m
+[31m-        <div class="footer__copyrigth">[m
+[32m+[m[32m        <div class="footer__copyright">[m
+           <span>Разработано</span>[m
+         </div>[m
+       </div>[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex d682e0e..8dd9625 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -3,12 +3,13 @@[m
+   <head>[m
+     <meta charset="utf-8">[m
+     <title>HTML Academy: Мишка</title>[m
+[32m+[m[32m    <link rel="stylesheet" href="css/style.css">[m
+   </head>[m
+[31m-  <body>[m
+[32m+[m[32m  <body class="page">[m
+     <header class="header">[m
+       <div class="header__wrap">[m
+         <div class="logo">[m
+[31m-          <a><img src="http://placehold.it/150x100" alt="logo"></a>[m
+[32m+[m[32m          <a><img src="http://placehold.it/150x100" width="150" height="100" alt="logo"></a>[m
+         </div>[m
+         <div class="menu">[m
+           <ul class="menu__list">[m
+[36m@@ -52,7 +53,7 @@[m
+                 <td>15 см</td>[m
+               </tr>[m
+             </table>[m
+[31m-            <a href="#"><img src="http://placehold.it/150x100" alt="image-item"></a>[m
+[32m+[m[32m            <a href="#"><img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="image-item"></a>[m
+             <span>Цена: 990руб.</span>[m
+             <a href="#">заказать</a>[m
+           </article>[m
+[36m@@ -73,23 +74,24 @@[m
+       </section>[m
+       <section class="reviews">[m
+         <div class="reviews__wrap">[m
+[32m+[m[32m          <h1>Отзывы</h1>[m
+           <article class="review">[m
+             <blockquote class="review__text">[m
+               <p>Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>[m
+               <cite>@misssssiskras</cite>[m
+             </blockquote>[m
+             <h1 class="review__author">Анастасия Красильникова</h1>[m
+[31m-            <div class="review__controls">[m
+[31m-              <button class="button  button--prev" type="button" name="button">&lt;</button>[m
+[31m-              <button class="button  button--next" type="button" name="button">&gt;</button>[m
+[31m-            </div>[m
+[31m-            <a href="#">написать</a>[m
+           </article>[m
+[32m+[m[32m          <div class="review__controls">[m
+[32m+[m[32m            <button class="button  button--prev" type="button" name="button">&lt;</button>[m
+[32m+[m[32m            <button class="button  button--next" type="button" name="button">&gt;</button>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <a href="#">написать</a>[m
+         </div>[m
+       </section>[m
+       <section class="contacts">[m
+         <div class="contacts__wrap">[m
+[31m-          <h3>Контакты</h3>[m
+[32m+[m[32m          <h2>Контакты</h2>[m
+           <address>[m
+             <span>e-mail:</span>[m
+             <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>[m
+[36m@@ -97,7 +99,7 @@[m
+             <p>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>[m
+           </address>[m
+           <div class="contacts__map">[m
+[31m-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6544926895895!2d30.32284726454108!3d59.937875156918345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1489165816204" width="400" height="300"></iframe>[m
+[32m+[m[32m            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6544926895895!2d30.32284726454108!3d59.937875156918345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1489165816204" width="320" height="457"></iframe>[m
+           </div>[m
+           <a href="#">напишите нам</a>[m
+         </div>[m
+[36m@@ -110,12 +112,12 @@[m
+           <li><a href="#">vk</a></li>[m
+           <li><a href="#">tw</a></li>[m
+         </ul>[m
+[31m-        <div class="footer__copyrigth">[m
+[32m+[m[32m        <div class="footer__copyright">[m
+           <span>Разработано</span>[m
+         </div>[m
+       </div>[m
+     </footer>[m
+[31m-    <section class="popups">[m
+[32m+[m[32m    <section class="popup">[m
+       <form class="popup__form" action="https://echo.htmlacademy.ru/" method="post">[m
+         <h1>добавить в корзину</h1>[m
+         <span>Выберете размер:</span>[m
