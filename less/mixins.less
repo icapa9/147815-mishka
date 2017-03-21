@@ -27,3 +27,18 @@
   color: @color;
   text-decoration: none;
 }
+
+.container() {
+  width: 320px;
+  margin: auto;
+
+  @media @tablet-widths {
+    width: 668px;
+    // margin-left: 6.5%;
+    // margin-right: 6.5%;
+  }
+
+  @media @desktop-widths {
+    width: 1050px;
+  }
+}

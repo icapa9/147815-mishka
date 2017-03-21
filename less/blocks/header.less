@@ -1,3 +1,24 @@
 .header {
   outline: @outline-block;
+  max-width: 1150px;
+  margin: auto;
+}
+
+
+@media @tablet-widths {
+  .header__wrap {
+    display: flex;
+    margin-left: 6.5%;
+    margin-right: 6.5%;
+    opacity: 1;
+  }
+}
+
+@media @desktop-widths {
+  .header__wrap {
+    position: relative;
+    margin-left: 4.35%;
+    margin-right: 4.35%;
+    opacity: 1;
+  }
 }
