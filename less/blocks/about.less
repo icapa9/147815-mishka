@@ -1,6 +1,11 @@
 .about {
   outline: @outline-block;
+  .container;
+}
+
+.about__wrap {
   padding: 30px;
+
   h1{
     .caption();
   }
@@ -15,4 +20,48 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+}
+
+@media @tablet-widths {
+  .about__wrap {
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    padding-left: 50px;
+  }
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    width: 334px;
+  }
+
+  .about__item:nth-of-type(2) {
+    order: -4;
+  }
+  .about__item:nth-of-type(5) {
+    order: -3;
+  }
+  .about__item:nth-of-type(3) {
+    order: -2;
+  }
+  .about__item:nth-of-type(4) {
+    order: -5;
+
+  }
+  .about__item:nth-of-type(6) {
+    order: -1;
+  }
+
+  .about__item:nth-of-type(1) {
+    order: -6;
+  }
+}
+
+@media @desktop-widths {
+  .about__wrap {
+    padding-left: 225px;
+  }
 }

@@ -1,7 +1,57 @@
 .review {
   outline: @outline-block;
+  margin: auto;
 
   h1{
     .caption();
+  }
+
+  .review__text {
+    margin: 0;
+    margin-bottom: 36px;
+  }
+}
+
+.review__controls {
+  margin-bottom: 38px;
+
+  button {
+    width: 130px;
+  }
+}
+
+@media @tablet-widths {
+  .review {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review__text {
+    width: 668px;
+  }
+
+  .review__controls {
+    margin-top: -70px;
+    margin-left: auto;
+
+    button {
+      width: 50px;
+      margin-right: 37px;
+    }
+
+    button:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .review {
+    margin: 0;
+  }
+
+  .review__text {
+    padding-left: 175px;
+    width: 780px;
   }
 }

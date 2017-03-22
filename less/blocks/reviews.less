@@ -1,8 +1,56 @@
 .reviews {
   outline: @outline-block;
+  .container;
+}
+
+.reviews__wrap {
   padding: 30px;
 
   h1 {
     .caption();
+    order: -2;
+    background-color: lightpink;
+  }
+
+  a {
+    display: block;
+    padding-top: 18px;
+    padding-right: 51px;
+    padding-bottom: 18px;
+    padding-left: 51px;
+    border: 2px solid red;
+    text-align: center;
+  }
+}
+
+@media @tablet-widths {
+  .reviews {
+    padding-top: 80px;
+    background: url("../../img/review@1x.jpg") no-repeat;
+  }
+
+  .reviews__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    a {
+      order: -1;
+      align-self: flex-end;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .reviews {
+    background-position: 50px;
+  }
+
+  .reviews__wrap > h1 {
+    padding-left: 175px;
   }
 }
