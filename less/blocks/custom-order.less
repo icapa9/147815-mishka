@@ -1,5 +1,6 @@
 .custom-order {
   outline: @outline-block;
+  .container;
 }
 
 .custom-order > h1 {
@@ -9,4 +10,21 @@
   text-align: center;
 
   .caption(27px);
+}
+
+@media @tablet-widths {
+  .custom-order {
+    margin-top: -60px;
+  }
+
+  .custom-order > h1 {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+
+  .custom-order__wrap {
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+  }
 }

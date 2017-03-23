@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка - Форма</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -9,7 +10,7 @@
     <header class="header">
       <div class="header__wrap">
         <div class="logo">
-          <a href="index.html"><img src="http://placehold.it/150x100" alt="logo"></a>
+          <a href="index.html"><img src="http://placehold.it/150x100" width="70" height="46" alt="logo"></a>
         </div>
         <div class="menu">
           <ul class="menu__list">
@@ -17,6 +18,9 @@
             <li class="menu__item"><a>Вязание на заказ</a></li>
             <li class="menu__item"><a href="#">Поиск по сайту</a></li>
             <li class="menu__item"><a href="#">Корзина: пока пуста</a></li>
+            <li class="menu__item"><a href="#">Новые поступления</a></li>
+            <li class="menu__item"><a href="#">Распродажа</a></li>
+            <li class="menu__item"><a href="#">Бесплатная доставка по России</a></li>
           </ul>
         </div>
       </div>
@@ -24,58 +28,71 @@
     <main>
       <section class="custom-order">
         <h1>Вязание на заказ</h1>
-        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-          <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-          <div class="form__type">
-            <h2>тип</h2>
-            <input type="radio" name="type" value="accessory" id="accessory" checked>
-            <label for="accessory">Аксессуар для интерьера</label>
-            <input type="radio" name="type" value="toys" id="toys">
-            <label for="toys">Детская игрушка</label>
-          </div>
-          <div class="form__color">
-            <h2>цвет</h2>
-            <input type="checkbox" name="white" id="white" checked>
-            <label for="white">Белый</label>
-            <input type="checkbox" name="grey" id="grey" checked>
-            <label for="grey">Серый</label>
-            <input type="checkbox" name="tiffany" id="tiffany">
-            <label for="tiffany">	&laquo;Тиффани&raquo;</label>
-            <input type="checkbox" name="black" id="black">
-            <label for="black">Черный</label>
-            <input type="checkbox" name="pink" id="pink">
-            <label for="pink">Розовый</label>
-            <input type="checkbox" name="orange" id="orange">
-            <label for="orange">Оранжевый</label>
-          </div>
-          <div class="form_id">
-            <h2>фио</h2>
-            <label for="name">Имя:</label>
-            <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
-            <label for="surname">Фамилия:</label>
-            <input type="text" name="surname" id="surname" placeholder="Введите вашу фамилию*" required>
-            <label for="middle-name">Отчество:</label>
-            <input type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
-          </div>
-          <div class="form__tel">
-            <h2>тел</h2>
-            <input type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
-          </div>
-          <div class="form__email">
-            <h2>e-mail</h2>
-            <input type="email" name="email" placeholder="Ваш Email*" required>
-          </div>
-          <div class="form__add-info">
-            <h2>доп</h2>
-            <textarea name="add-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </div>
-          <span><sup>&#9913;</sup>Поля обязательны для заполнения</span>
-          <button type="submit">отправить заказ</button>
-        </form>
+        <div class="custom-order__wrap">
+          <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+            <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+            <div class="form__type">
+              <h2>тип</h2>
+              <div class="form__type-items">
+                <input type="radio" name="type" value="accessory" id="accessory" checked>
+                <label for="accessory">Аксессуар для интерьера</label>
+                <input type="radio" name="type" value="toys" id="toys">
+                <label for="toys">Детская игрушка</label>
+              </div>
+            </div>
+            <div class="form__color">
+              <h2>цвет</h2>
+              <div class="form__color-items">
+                <input type="checkbox" name="white" id="white" checked>
+                <label for="white">Белый</label>
+                <input type="checkbox" name="grey" id="grey" checked>
+                <label for="grey">Серый</label>
+                <input type="checkbox" name="tiffany" id="tiffany">
+                <label for="tiffany">	&laquo;Тиффани&raquo;</label>
+                <input type="checkbox" name="black" id="black">
+                <label for="black">Черный</label>
+                <input type="checkbox" name="pink" id="pink">
+                <label for="pink">Розовый</label>
+                <input type="checkbox" name="orange" id="orange">
+                <label for="orange">Оранжевый</label>
+              </div>
+            </div>
+            <div class="form__id">
+              <h2>фио</h2>
+              <div class="form__id-items">
+                <label for="name">Имя:</label>
+                <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+                <label for="surname">Фамилия:</label>
+                <input type="text" name="surname" id="surname" placeholder="Введите вашу фамилию*" required>
+                <label for="middle-name">Отчество:</label>
+                <input type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
+              </div>
+            </div>
+            <div class="form__tel">
+              <h2>тел</h2>
+              <input type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
+            </div>
+            <div class="form__email">
+              <h2>e-mail</h2>
+              <input type="email" name="email" placeholder="Ваш Email*" required>
+            </div>
+            <div class="form__add-info">
+              <h2>доп</h2>
+              <textarea name="add-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
+            <div class="form__submit">
+              <span><sup>&#9913;</sup>Поля обязательны для заполнения</span>
+              <button type="submit">отправить заказ</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__wrap">
+        <div class="logo">
+          <a><img src="http://placehold.it/150x100" width="70" height="46" alt="logo"></a>
+        </div>
         <ul class="socials">
           <li><a href="#">inst</a></li>
           <li><a href="#">vk</a></li>
