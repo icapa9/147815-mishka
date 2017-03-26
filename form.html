@@ -30,14 +30,20 @@
         <h1>Вязание на заказ</h1>
         <div class="custom-order__wrap">
           <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-            <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+            <div class="form__description">
+              <div class="form__description-wrap">
+                <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+              </div>
+            </div>
             <div class="form__type">
-              <h2>тип</h2>
-              <div class="form__type-items">
-                <input type="radio" name="type" value="accessory" id="accessory" checked>
-                <label for="accessory">Аксессуар для интерьера</label>
-                <input type="radio" name="type" value="toys" id="toys">
-                <label for="toys">Детская игрушка</label>
+              <div class="form__type-wrap">
+                <h2>тип</h2>
+                <div class="form__type-items">
+                  <input type="radio" name="type" value="accessory" id="accessory" checked>
+                  <label for="accessory">Аксессуар для интерьера</label>
+                  <input type="radio" name="type" value="toys" id="toys">
+                  <label for="toys">Детская игрушка</label>
+                </div>
               </div>
             </div>
             <div class="form__color">
@@ -60,14 +66,16 @@
               </div>
             </div>
             <div class="form__id">
-              <h2>фио</h2>
-              <div class="form__id-items">
-                <label for="name">Имя:</label>
-                <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
-                <label for="surname">Фамилия:</label>
-                <input type="text" name="surname" id="surname" placeholder="Введите вашу фамилию*" required>
-                <label for="middle-name">Отчество:</label>
-                <input type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
+              <div class="form__id-wrap">
+                <h2>фио</h2>
+                <div class="form__id-items">
+                  <label for="name">Имя:</label>
+                  <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+                  <label for="surname">Фамилия:</label>
+                  <input type="text" name="surname" id="surname" placeholder="Введите вашу фамилию*" required>
+                  <label for="middle-name">Отчество:</label>
+                  <input type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
+                </div>
               </div>
             </div>
             <div class="form__tel">
@@ -83,12 +91,16 @@
               </div>
             </div>
             <div class="form__add-info">
-              <h2>доп</h2>
-              <textarea name="add-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <div class="form__add-info-wrap">
+                <h2>доп</h2>
+                <textarea name="add-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </div>
             </div>
             <div class="form__submit">
-              <span><sup>&#9913;</sup>Поля обязательны для заполнения</span>
-              <button type="submit">отправить заказ</button>
+              <div class="form__submit-wrap">
+                <span><sup>&#9913;</sup>Поля обязательны для заполнения</span>
+                <button type="submit">отправить заказ</button>
+              </div>
             </div>
           </form>
         </div>

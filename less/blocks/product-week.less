@@ -1,10 +1,5 @@
-.product-week {
-  outline: @outline-block;
-  .container;
-}
-
 .product-week__wrap {
-  outline: @outline-block;
+  .container;
   h1 {
     background-color: lightblue;
     .caption(25px);
@@ -13,7 +8,6 @@
 
 .product-week__item {
   position: relative;
-  padding: 30px;
 }
 
 .product-week__item span:nth-of-type(2) {
@@ -40,15 +34,12 @@
 @media @tablet-widths {
   .product-week__wrap {
     padding-top: 52px;
-    padding-right: 50px;
     padding-bottom: 52px;
-    padding-left: 50px;
   }
 
   .product-week__item {
     display: flex;
     flex-direction: column;
-    padding: 0;
   }
 
   .product-week__info {
@@ -57,17 +48,12 @@
     background-color: lightgrey;
   }
 
-  .product-week__info-table {
-    // margin-top: 30px;
-  }
-
   .product-week__item span:nth-of-type(1) {
     align-self: flex-end;
     margin-top: -47px;
     padding-right: 28px;
     padding-left: 28px;
     width: 50px;
-    background-color: lightpink;
   }
 
   .product-week__item span:nth-of-type(2) {
@@ -76,7 +62,6 @@
     margin-bottom: 34px;
     width: 334px;
     text-align: center;
-    background-color: lightgreen;
   }
 
   .product-week__item a:nth-of-type(1) {
@@ -90,18 +75,17 @@
     padding-right: 95px;
     padding-bottom: 18px;
     padding-left: 103px;
-    border: 2px solid red;
   }
 }
 
 @media @desktop-widths {
   .product-week__wrap {
     padding-top: 72px;
-    padding-left: 225px;
     padding-bottom: 72px;
   }
 
   .product-week__item {
+    padding-left: 175px;
     h1 {
       margin-top: -48px;
     }
@@ -113,7 +97,7 @@
     margin: 0;
     margin-left: -175px;
     padding-right: 50px;
-    padding-right: 50px;
+    // padding-left: 175px;
     width: 175px;
     text-align: center;
     box-sizing: border-box;

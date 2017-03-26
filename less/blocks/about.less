@@ -1,14 +1,11 @@
-.about {
-  outline: @outline-block;
+.about__wrap {
   .container;
+  margin-bottom: 40px;
 }
 
-.about__wrap {
-  padding: 30px;
-
-  h1{
-    .caption();
-  }
+.about__caption {
+  .caption();
+  margin: 0;
 }
 
 .about__list {
@@ -23,15 +20,15 @@
 }
 
 @media @tablet-widths {
-  .about__wrap {
+  .about {
     padding-top: 50px;
-    padding-right: 50px;
     padding-bottom: 60px;
-    padding-left: 50px;
   }
+
   .about__list {
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
   }
 
   .about__item {
@@ -61,7 +58,8 @@
 }
 
 @media @desktop-widths {
-  .about__wrap {
-    padding-left: 225px;
+  .about__caption,
+  .about__list {
+    padding-left: 175px;
   }
 }

@@ -27,7 +27,9 @@
     </header>
     <main>
       <section class="main-title">
-        <h1>Милые штуки<br> ручной<br> работы для дома</h1>
+        <div class="main-title__wrap">
+          <h1>Милые штуки<br> ручной<br> работы для дома</h1>
+        </div>
       </section>
       <section class="product-type">
         <div class="product-type__wrap">
@@ -130,15 +132,17 @@
     </footer>
     <section class="popup">
       <form class="popup__form" action="https://echo.htmlacademy.ru/" method="post">
-        <h1>добавить в корзину</h1>
-        <span>Выберете размер:</span>
-        <input type="radio" name="s" id="s" required>
-        <input type="radio" name="s" id="m" required>
-        <input type="radio" name="s" id="l" required>
-        <label for="s">s</label>
-        <label for="m">m</label>
-        <label for="l">l</label>
-        <button type="submit">добавить</button>
+        <div class="popup__form-wrap">
+          <h1>добавить<br> в корзину</h1>
+          <span>Выберете размер:</span>
+          <input type="radio" name="s" id="s" required>
+          <input type="radio" name="s" id="m" required>
+          <input type="radio" name="s" id="l" required>
+          <label for="s">s</label>
+          <label for="m">m</label>
+          <label for="l">l</label>
+          <button type="submit">добавить</button>
+        </div>
       </form>
     </section>
   </body>

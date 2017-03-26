@@ -1,14 +1,42 @@
-.popup {
-  outline: @outline-block;
-}
-
-.popup__form {
+.popup__form-wrap {
   padding: 30px;
   padding-bottom: 40px;
+  width: 320px;
+  margin: auto;
+  box-sizing: border-box;
+  text-align: center;
 
   h1 {
     text-transform: uppercase;
 
     .caption();
+  }
+
+  span {
+    display: block;
+  }
+
+  button {
+    display: block;
+    margin: auto;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 260px;
+  }
+}
+
+@media @tablet-widths {
+  .popup__form-wrap {
+    padding-right: 110px;
+    padding-left: 110px;
+    width: 566px;
+
+    button {
+      width: 350px;
+    }
+  }
+
+  br {
+    display: none;
   }
 }

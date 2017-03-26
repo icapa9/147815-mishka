@@ -1,6 +1,9 @@
 .form {
+  margin: auto;
   padding: 30px;
   padding-bottom: 40px;
+  width: 320px;
+  box-sizing: border-box;
 
   h2 {
     text-transform: uppercase;
@@ -23,12 +26,13 @@
 .form__submit {
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
 }
 
 @media @tablet-widths {
   .form {
+    margin-top: 50px;
     padding: 0;
+    width: 768px;
 
     button {
       padding-top: 18px;
@@ -37,22 +41,23 @@
       padding-left: 39px;
       border: 2px solid red;
     }
+  }
 
-    p {
-      .container-wrap;
-      padding-top: 50px;
-    }
+  .form__description-wrap {
+    .container;
   }
 
   .form__type {
-    display: flex;
     margin-bottom: 30px;
-
-    .container-wrap;
 
     input {
       display: none;
     }
+  }
+
+  .form__type-wrap {
+    display: flex;
+    .container;
   }
 
   .form__type-items {
@@ -62,6 +67,7 @@
   }
 
   .form__color {
+    background-color: @page-second-color;
     margin-bottom: 30px;
 
     input {
@@ -71,8 +77,7 @@
 
   .form__color-wrap {
     display: flex;
-    background-color: @page-second-color;
-    .container-wrap;
+    .container;
   }
 
   .form__color-items {
@@ -82,9 +87,12 @@
   }
 
   .form__id {
-    display: flex;
     margin-bottom: 30px;
-    .container-wrap;
+  }
+
+  .form__id-wrap {
+    display: flex;
+    .container;
   }
 
   .form__id-items {
@@ -103,41 +111,49 @@
 
   .form__tel {
     padding-bottom: 30px;
+    background-color: @page-second-color;
   }
 
   .form__tel-wrap {
     display: flex;
-    background-color: @page-second-color;
-    .container-wrap;
+    .container;
   }
 
   .form__email {
     margin-bottom: 30px;
+    background-color: @page-second-color;
   }
 
   .form__email-wrap {
     display: flex;
-    background-color: @page-second-color;
-    .container-wrap;
+    .container;
   }
 
   .form__add-info {
-    display: flex;
     margin-bottom: 30px;
-    .container-wrap;
+  }
+
+  .form__add-info-wrap {
+    display: flex;
+    .container;
   }
 
   .form__submit {
+    padding-bottom: 50px;
+  }
+
+  .form__submit-wrap {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding-bottom: 50px;
-    .container-wrap;
+    .container;
   }
 }
 
 @media @desktop-widths {
   .form {
+    width: 1150px;
+
     h2 {
       min-width: 175px;
       text-align: center;
@@ -150,9 +166,6 @@
       padding-right: 30px;
     }
   }
-  // .form__color-items {
-  //   padding-left: 110px;
-  // }
 
   .form__type-items {
     padding-left: 0;

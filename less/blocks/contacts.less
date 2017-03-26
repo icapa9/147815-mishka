@@ -1,22 +1,13 @@
 .contacts {
-  outline: @outline-block;
-  .container;
-
   h2 {
-    outline: @outline-block;
     padding-top: 40px;
-    padding-right:30px;
     padding-bottom: 40px;
-    padding-left: 30px;
 
     .caption(18px);
   }
 
   address {
-    outline: @outline-block;
-    padding-right:30px;
     padding-bottom: 40px;
-    padding-left: 30px;
   }
 
   p {
@@ -28,18 +19,16 @@
 }
 
 .contacts__wrap {
+  .container;
   padding-bottom: 55px;
 }
 
 .contacts__wrap > a {
   display: block;
-  margin-right: 30px;
-  margin-left: 30px;
   padding-top: 18px;
   padding-right: 51px;
   padding-bottom: 18px;
   padding-left: 51px;
-  border: 2px solid red;
   text-align: center;
 }
 
@@ -48,6 +37,7 @@
   background: url("../../img/map-mobile@1x.jpg") 100% 100% no-repeat;
 
   iframe {
+    margin-left: -30px;
     width: 320px;
     height: 457px;
   }
@@ -57,20 +47,11 @@
   .contacts__wrap {
     display: flex;
     flex-direction: column;
-    padding-right: 50px;
-    padding-left: 50px;
-
-    h2 {
-      margin-right: auto;
-      // background-color: lightpink;
-    }
 
     address {
       display: flex;
       margin: auto;
-      padding: 0;
       padding-bottom: 60px;
-      // background-color: lightgreen;
     }
   }
 
@@ -80,21 +61,17 @@
         padding-right: 41px;
         padding-bottom: 18px;
         padding-left: 39px;
-        border: 2px solid red;
       }
 
   .contacts__item {
     width: 334px;
-    background-color: lightblue;
 
     span {
       margin-right: 26px;
     }
 
     p {
-      margin: 0;
       width: 220px;
-      // background-color: lightyellow;
     }
   }
 
@@ -111,9 +88,6 @@
 
 @media @desktop-widths {
   .contacts__wrap {
-    padding-right: 50px;
-    padding-left: 50px;
-
     h2 {
       margin-top: 90px;
       padding-left: 175px;
@@ -122,7 +96,6 @@
     address {
       flex-direction: column;
       margin: 0;
-      padding-right: 0;
       padding-left: 175px;
       width: 350px;
     }

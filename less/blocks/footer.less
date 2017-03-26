@@ -1,7 +1,11 @@
 .footer {
-  outline: @outline-block;
   background-color: @footer-color;
+}
+
+.footer__wrap {
   .container;
+  width: 320px;
+  padding: 0;
 }
 
 .footer .logo {
@@ -22,8 +26,6 @@
   .footer__wrap {
     display: flex;
     justify-content: space-between;
-    padding-right: 50px;
-    padding-left: 50px;
     background-color: @footer-color;
   }
 
@@ -37,7 +39,6 @@
   }
 
   .footer__copyright {
-    outline: @outline-block;
     padding-right: 60px;
     width: 125px;
 
