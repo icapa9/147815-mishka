@@ -1,13 +1,25 @@
-.main-title {
-  outline: @outline-block;
+.main-title__wrap {
+  .container;
+  padding-top: 76px;
+  padding-bottom: 121px;
   background: url("../../img/hero-mobile@1x.jpg") 50% 50% no-repeat;
-  padding-top: 96px;
-  padding-right: 38px;
-  padding-bottom: 96px;
-  padding-left: 38px;
 
   h1 {
     .caption(27px);
     text-align: center;
+  }
+}
+
+@media @tablet-widths {
+  .main-title__wrap {
+    margin-top: -60px;
+    padding-top: 162px;
+    padding-bottom: 375px;
+  }
+}
+
+@media @desktop-widths {
+  .main-title__wrap {
+    padding-bottom: 355px;
   }
 }

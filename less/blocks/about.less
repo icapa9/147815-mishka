@@ -1,9 +1,11 @@
-.about {
-  outline: @outline-block;
-  padding: 30px;
-  h1{
-    .caption();
-  }
+.about__wrap {
+  .container;
+  margin-bottom: 40px;
+}
+
+.about__caption {
+  .caption();
+  margin: 0;
 }
 
 .about__list {
@@ -15,4 +17,49 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+}
+
+@media @tablet-widths {
+  .about {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .about__item {
+    width: 334px;
+  }
+
+  .about__item:nth-of-type(2) {
+    order: -4;
+  }
+  .about__item:nth-of-type(5) {
+    order: -3;
+  }
+  .about__item:nth-of-type(3) {
+    order: -2;
+  }
+  .about__item:nth-of-type(4) {
+    order: -5;
+
+  }
+  .about__item:nth-of-type(6) {
+    order: -1;
+  }
+
+  .about__item:nth-of-type(1) {
+    order: -6;
+  }
+}
+
+@media @desktop-widths {
+  .about__caption,
+  .about__list {
+    padding-left: 175px;
+  }
 }

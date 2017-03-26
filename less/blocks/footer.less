@@ -1,6 +1,15 @@
 .footer {
-  outline: @outline-block;
   background-color: @footer-color;
+}
+
+.footer__wrap {
+  .container;
+  width: 320px;
+  padding: 0;
+}
+
+.footer .logo {
+  display: none;
 }
 
 .footer__copyright {
@@ -10,5 +19,31 @@
   span {
     display: block;
     text-align: center;
+  }
+}
+
+@media @tablet-widths {
+  .footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    background-color: @footer-color;
+  }
+
+  .footer .logo {
+    display: block;
+    width: 120px;
+  }
+
+  .socials {
+    width: 200px;
+  }
+
+  .footer__copyright {
+    padding-right: 60px;
+    width: 125px;
+
+    span {
+      text-align: left;
+    }
   }
 }

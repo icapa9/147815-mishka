@@ -1,9 +1,26 @@
 .logo {
   outline: @outline-block;
+
   a {
     display: block;
     margin: auto;
-    width: 150px;
-    height: 100px;
+    width: 70px;
+    height: 46px;
+  }
+}
+
+@media @tablet-widths {
+  .header .logo {
+    position: absolute;
+  }
+
+  .logo a {
+    margin-left: 0;
+  }
+}
+
+@media @desktop-widths {
+  .header .logo {
+    margin-left: 450px;
   }
 }

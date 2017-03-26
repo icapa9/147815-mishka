@@ -1,18 +1,127 @@
 .contacts {
-  outline: @outline-block;
-
-  address, h2 {
+  h2 {
     padding-top: 40px;
-    padding-right:30px;
     padding-bottom: 40px;
-    padding-left: 30px;
+
+    .caption(18px);
   }
 
-  h2 {
-    .caption(18px);
+  address {
+    padding-bottom: 40px;
+  }
+
+  p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    width: 145px;
   }
 }
 
+.contacts__wrap {
+  .container;
+  padding-bottom: 55px;
+}
+
+.contacts__wrap > a {
+  display: block;
+  padding-top: 18px;
+  padding-right: 51px;
+  padding-bottom: 18px;
+  padding-left: 51px;
+  text-align: center;
+}
+
 .contacts__map {
+  margin-bottom: 39px;
   background: url("../../img/map-mobile@1x.jpg") 100% 100% no-repeat;
+
+  iframe {
+    margin-left: -30px;
+    width: 320px;
+    height: 457px;
+  }
+}
+
+@media @tablet-widths {
+  .contacts__wrap {
+    display: flex;
+    flex-direction: column;
+
+    address {
+      display: flex;
+      margin: auto;
+      padding-bottom: 60px;
+    }
+  }
+
+  .contacts__wrap > a {
+        margin: auto;
+        padding-top: 18px;
+        padding-right: 41px;
+        padding-bottom: 18px;
+        padding-left: 39px;
+      }
+
+  .contacts__item {
+    width: 334px;
+
+    span {
+      margin-right: 26px;
+    }
+
+    p {
+      width: 220px;
+    }
+  }
+
+  .contacts__map {
+    margin: auto;
+    margin-bottom: 55px;
+
+    iframe {
+      margin-left: -50px;
+      width: 768px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .contacts__wrap {
+    h2 {
+      margin-top: 90px;
+      padding-left: 175px;
+    }
+
+    address {
+      flex-direction: column;
+      margin: 0;
+      padding-left: 175px;
+      width: 350px;
+    }
+  }
+
+  .contacts__wrap > a {
+    align-self: flex-start;
+    margin-top: -75px;
+    margin-left: 175px;
+  }
+
+  .contacts__item {
+    width: 350px;
+  }
+
+  .contacts__item:first-child {
+    margin-bottom: 38px;
+  }
+
+  .contacts__map {
+    align-self: flex-end;
+    margin: 0;
+    margin-top: -335px;
+
+    iframe {
+      width: 525px;
+    }
+  }
 }

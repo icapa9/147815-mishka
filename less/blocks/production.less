@@ -1,8 +1,92 @@
 .production {
-  outline: @outline-block;
-  padding: 30px;
-
   h2 {
     .caption(17px);
+  }
+}
+
+.production__wrap {
+  .container;
+
+  a {
+    display: block;
+    padding-top: 18px;
+    padding-right: 24px;
+    padding-bottom: 18px;
+    padding-left: 24px;
+    border: 2px solid red;
+    text-align: center;
+  }
+}
+
+@media @tablet-widths {
+  .production__wrap {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      padding-left: 66px;
+    }
+
+    a {
+      display: block;
+      margin-right: 42px;
+      margin-left: 42px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      text-align: center;
+    }
+  }
+
+  .production__video {
+    order: -1;
+    width: 668px;
+    min-height: 455px;
+  }
+
+  .production__info {
+    padding-right: 42px;
+    padding-left: 42px;
+  }
+}
+
+@media @desktop-widths {
+  .production__wrap {
+    position: relative;
+    display: flex;
+    margin-bottom: 105px;
+    padding-bottom: 37px;
+
+    h2 {
+      margin: 0;
+      margin-bottom: 43px;
+      padding-top: 100px;
+      padding-right: 140px;
+      padding-left: 77px;
+      width: 367px;
+      box-sizing: border-box;
+      align-self: flex-end;
+    }
+
+    a {
+      align-self: flex-end;
+      width: 367px;
+      margin: 0;
+      box-sizing: border-box;
+    }
+  }
+
+  .production__info {
+    align-self: flex-end;
+    margin-top: 0;
+    margin-bottom: 55px;
+    padding-right: 0;
+    padding-left: 77px;
+    width: 367px;
+    box-sizing: border-box;
+  }
+
+  .production__video {
+    position: absolute;
+    width: 683px;
   }
 }

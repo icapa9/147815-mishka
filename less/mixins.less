@@ -14,7 +14,7 @@
 }
 
 .caption(@font-size: 25px) {
-  margin: 0;
+  // margin: 0;
   font-size: @font-size;
   line-height: 30px;
   font-weight: 700;
@@ -26,4 +26,21 @@
   font-weight: @font-weight;
   color: @color;
   text-decoration: none;
+}
+
+.container() {
+  width: 260px;
+  margin: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  @media @tablet-widths {
+    width: 668px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @media @desktop-widths {
+    width: 1050px;
+  }
 }

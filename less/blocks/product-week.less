@@ -1,11 +1,105 @@
-.product-week {
-  outline: @outline-block;
-
+.product-week__wrap {
+  .container;
   h1 {
+    background-color: lightblue;
     .caption(25px);
   }
 }
 
 .product-week__item {
-  padding: 30px;
+  position: relative;
+}
+
+.product-week__item span:nth-of-type(2) {
+  display: block;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.product-week__item a:nth-of-type(1) {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.product-week__item a:nth-of-type(2) {
+  display: block;
+  padding-top: 18px;
+  padding-right: 82px;
+  padding-bottom: 18px;
+  padding-left: 83px;
+  border: 2px solid red;
+  text-align: center;
+}
+
+@media @tablet-widths {
+  .product-week__wrap {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  .product-week__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-week__info {
+    margin-top: 40px;
+    width: 334px;
+    background-color: lightgrey;
+  }
+
+  .product-week__item span:nth-of-type(1) {
+    align-self: flex-end;
+    margin-top: -47px;
+    padding-right: 28px;
+    padding-left: 28px;
+    width: 50px;
+  }
+
+  .product-week__item span:nth-of-type(2) {
+    align-self: flex-start;
+    margin-top: -100px;
+    margin-bottom: 34px;
+    width: 334px;
+    text-align: center;
+  }
+
+  .product-week__item a:nth-of-type(1) {
+    align-self: flex-end;
+    margin-top: -172px;
+  }
+
+  .product-week__item a:nth-of-type(2) {
+    align-self: flex-start;
+    padding-top: 18px;
+    padding-right: 95px;
+    padding-bottom: 18px;
+    padding-left: 103px;
+  }
+}
+
+@media @desktop-widths {
+  .product-week__wrap {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .product-week__item {
+    padding-left: 175px;
+    h1 {
+      margin-top: -48px;
+    }
+  }
+
+  .product-week__item span:nth-of-type(1) {
+    order: -1;
+    align-self: flex-start;
+    margin: 0;
+    margin-left: -175px;
+    padding-right: 50px;
+    // padding-left: 175px;
+    width: 175px;
+    text-align: center;
+    box-sizing: border-box;
+  }
 }
