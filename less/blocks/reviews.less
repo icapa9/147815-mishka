@@ -29,11 +29,19 @@
     justify-content: space-between;
     margin: auto;
     background: url("../../img/review@1x.jpg") no-repeat;
+    min-height: 457px;
 
     a {
       order: -1;
       align-self: flex-end;
     }
+  }
+
+  @media (min-width: 660px) and (min-resolution: 144dpi),
+         (min-width: 660px) and (min-resolution: 1.5dppx) {
+           .reviews__wrap {
+             background: url("../../img/review@2x.jpg");
+           }
   }
 }
 
