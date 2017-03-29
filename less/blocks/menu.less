@@ -1,20 +1,48 @@
-.menu {
-  position: relative;
+.menu__toggle {
+  position: absolute;
+  display: block;
+  top: 22px;
+  right: 21px;
+  width: 40px;
+  height: 34px;
+  font-size: 0;
+  border: none;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.menu--closed .menu__toggle::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='19.958px' height='14px' viewBox='0 0 19.958 14' enable-background='new 0 0 19.958 14' xml:space='preserve'%3E%3Crect fill='%23231F20' width='19.958' height='2'/%3E%3Crect y='6' fill='%23231F20' width='19.958' height='2'/%3E%3Crect y='12' fill='%23231F20' width='19.958' height='2'/%3E%3C/svg%3E ");
+  background-repeat: no-repeat;
+}
+
+.menu--closed .menu__list {
+  display: none;
+}
+
+.menu--nojs .menu__list {
+  display: block;
+}
+
+.menu--opened .menu__toggle::before {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 10px;
+  width: 21px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='20.514px' height='20.512px' viewBox='0 0 20.514 20.512' enable-background='new 0 0 20.514 20.512' xml:space='preserve'%3E%3Cpolygon fill='%23231F20' points='20.513,1.414 19.099,0 10.256,8.842 1.414,0 0,1.414 8.842,10.256 0,19.098 1.414,20.512 10.256,11.67 19.099,20.512 20.513,19.098 11.671,10.256 '/%3E%3C/svg%3E ");
+  background-repeat: no-repeat;
 }
 
 .menu__list {
   .list-style;
-}
-
-.menu__list::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='19.958px' height='14px' viewBox='0 0 19.958 14' enable-background='new 0 0 19.958 14' xml:space='preserve'%3E%3Crect fill='%23231F20' width='19.958' height='2'/%3E%3Crect y='6' fill='%23231F20' width='19.958' height='2'/%3E%3Crect y='12' fill='%23231F20' width='19.958' height='2'/%3E%3C/svg%3E ");
-  background-repeat: no-repeat;
 }
 
 .menu__item {
@@ -52,9 +80,17 @@
 }
 
 @media @tablet-widths {
+  .menu .menu__list {
+    display: flex;
+  }
+
   .menu__list {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .menu__toggle {
+    display: none;
   }
 
   .menu__list::after {
