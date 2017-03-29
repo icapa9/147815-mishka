@@ -10,9 +10,15 @@
     <header class="header">
       <div class="header__wrap">
         <div class="logo">
-          <a><img src="http://placehold.it/150x100" width="70" height="46" alt="logo"></a>
+          <a>
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="logo">
+            </picture>
+          </a>
         </div>
-        <div class="menu">
+        <div class="menu menu--closed menu--nojs">
           <ul class="menu__list">
             <li class="menu__item"><a href="catalog.html">Каталог товаров</a></li>
             <li class="menu__item"><a href="form.html">Вязание на заказ</a></li>
@@ -22,6 +28,7 @@
             <li class="menu__item"><a href="#">Распродажа</a></li>
             <li class="menu__item"><a href="#">Бесплатная доставка по России</a></li>
           </ul>
+          <button type="button" name="button" class="menu__toggle">Открыть меню</button>
         </div>
       </div>
     </header>
@@ -59,7 +66,13 @@
                 <td>15 см</td>
               </tr>
             </table>
-            <a href="#"><img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="image-item"></a>
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg">
+                <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg" alt="week-item">
+              </picture>
+            </a>
             <span>Цена: 990руб.</span>
             <a href="#">заказать</a>
           </article>
@@ -109,7 +122,7 @@
             </div>
           </address>
           <div class="contacts__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6544926895895!2d30.32284726454108!3d59.937875156918345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1489165816204" ></iframe>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6544926895895!2d30.32284726454108!3d59.937875156918345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1489165816204" ></iframe> -->
           </div>
           <a href="#">напишите нам</a>
         </div>
@@ -118,7 +131,7 @@
     <footer class="footer">
       <div class="footer__wrap">
         <div class="logo">
-          <a><img src="http://placehold.it/150x100" width="70" height="46" alt="logo"></a>
+          <a><img src="img/logo-footer.svg" width="102" height="34" alt="footer-logo"></a>
         </div>
         <ul class="socials">
           <li><a href="#">inst</a></li>
@@ -145,5 +158,22 @@
         </div>
       </form>
     </section>
+    <script>
+    var menu = document.querySelector(".menu");
+    var menuToggle = document.querySelector(".menu__toggle");
+
+    menuToggle.addEventListener("click", function() {
+
+      menu.classList.remove("menu--nojs");
+
+      if (menu.classList.contains("menu--closed")) {
+        menu.classList.remove("menu--closed");
+        menu.classList.add("menu--opened");
+      } else {
+        menu.classList.add("menu--closed");
+        menu.classList.remove("menu--opened");
+      }
+    });
+    </script>
   </body>
 </html>
