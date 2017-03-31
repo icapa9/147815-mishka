@@ -1,5 +1,8 @@
-.popup {
-  display: none;
+// .popup {
+//   display: none;
+// }
+.popup__form {
+  border-top: 1px solid #c6c6c6;
 }
 .popup__form-wrap {
   padding: 30px;
@@ -21,10 +24,41 @@
 
   button {
     display: block;
-    margin: auto;
+    width: 100%;
     padding-top: 18px;
     padding-bottom: 18px;
-    width: 260px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #63d1bb;
+    border: 2px solid #63d1bb;
+    outline: none;
+  }
+
+  input {
+    display: none;
+
+    &:checked {
+      + label {
+        border-color:#63d1bb;
+      }
+    }
+  }
+
+  label {
+    display: inline-block;
+    width: 82px;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    border: 2px solid #ececec;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &:hover {
+      border-color: #c7c7c7;
+    }
   }
 }
 
