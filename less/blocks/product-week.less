@@ -1,7 +1,6 @@
 .product-week__wrap {
   .container;
   h1 {
-    background-color: lightblue;
     .caption(25px);
   }
 }
@@ -30,11 +29,9 @@
 
 .product-week__item a:nth-of-type(2) {
   display: block;
-  padding-top: 18px;
-  padding-right: 82px;
-  padding-bottom: 18px;
-  padding-left: 83px;
-  text-align: center;
+
+  .link(17, 700, #444444);
+  .button-style;
 }
 
 @media @tablet-widths {
@@ -51,7 +48,6 @@
   .product-week__info {
     margin-top: 40px;
     width: 334px;
-    background-color: lightgrey;
   }
 
   .product-week__item span:nth-of-type(1) {

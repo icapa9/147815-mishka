@@ -18,7 +18,7 @@
             </picture>
           </a>
         </div>
-        <div class="menu">
+        <div class="menu menu--closed menu--nojs">
           <ul class="menu__list">
             <li class="menu__item"><a href="catalog.html">Каталог товаров</a></li>
             <li class="menu__item"><a>Вязание на заказ</a></li>
@@ -28,6 +28,7 @@
             <li class="menu__item"><a href="#">Распродажа</a></li>
             <li class="menu__item"><a href="#">Бесплатная доставка по России</a></li>
           </ul>
+          <button type="button" name="button" class="menu__toggle">Открыть меню</button>
         </div>
       </div>
     </header>
@@ -88,12 +89,14 @@
               <div class="form__tel-wrap">
                 <h2>тел</h2>
                 <input type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
+                <span></span>
               </div>
             </div>
             <div class="form__email">
               <div class="form__email-wrap">
                 <h2>e-mail</h2>
                 <input type="email" name="email" placeholder="Ваш Email*" required>
+                <span></span>
               </div>
             </div>
             <div class="form__add-info">
@@ -123,9 +126,26 @@
           <li><a href="#">tw</a></li>
         </ul>
         <div class="footer__copyright">
-          <span>Разработано</span>
+          <a href="">Разработано</a>
         </div>
       </div>
     </footer>
+    <script>
+    var menu = document.querySelector(".menu");
+    var menuToggle = document.querySelector(".menu__toggle");
+
+    menuToggle.addEventListener("click", function() {
+
+      menu.classList.remove("menu--nojs");
+
+      if (menu.classList.contains("menu--closed")) {
+        menu.classList.remove("menu--closed");
+        menu.classList.add("menu--opened");
+      } else {
+        menu.classList.add("menu--closed");
+        menu.classList.remove("menu--opened");
+      }
+    });
+    </script>
   </body>
 </html>
