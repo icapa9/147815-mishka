@@ -1,16 +1,34 @@
-// .popup {
-//   display: none;
-// }
-.popup__form {
-  border-top: 1px solid #c6c6c6;
+.popup {
+  display: none;
 }
+
+.popup__form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+}
+
 .popup__form-wrap {
   padding: 30px;
   padding-bottom: 40px;
   width: 320px;
-  margin: auto;
+  // margin: auto;
   box-sizing: border-box;
   text-align: center;
+  background: white;
+  border: 1px solid #c7c7c7;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -160px;
+  z-index: 11;
 
   h1 {
     text-transform: uppercase;
@@ -67,6 +85,8 @@
     padding-right: 110px;
     padding-left: 110px;
     width: 566px;
+
+    margin-left: -258px;
 
     button {
       width: 350px;

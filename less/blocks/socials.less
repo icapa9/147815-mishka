@@ -1,21 +1,38 @@
 .socials {
+  position: relative;
   display: block;
   text-align: center;
+
+  .list-style;
 
   li {
     display: inline-block;
     vertical-align: top;
+    margin-right: 35px;
     padding-top: 25px;
     padding-bottom: 25px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 
   a {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     font-size: 0;
+    line-height: 80px;
   }
 
-  .list-style;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 80px;
+    left: 30px;
+    width: 260px;
+    height: 1px;
+    background-color: #e5e5e5;
+  }
 }
 
 .socials li a {
