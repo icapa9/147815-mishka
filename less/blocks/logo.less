@@ -13,15 +13,17 @@
 
   img {
     display: block;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
-  &:hover {
-    opacity: 0.6;
-  }
 
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .footer .logo {
@@ -54,9 +56,14 @@
      }
   }
 
+  .footer .logo {
+    display: block;
+    width: 120px;
+  }
+
   .footer .logo a {
     position: relative;
-    padding-top: 51px;
+    padding-top: 52px;
     font-size: 0;
     cursor: pointer;
 
@@ -96,6 +103,16 @@
     &::before {
       left: -500px;
       width: 1150px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .footer .logo {
+    a {
+      &::before {
+        left: 1px;
+      }
     }
   }
 }

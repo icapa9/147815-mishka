@@ -13,20 +13,32 @@
 
 .contacts__wrap {
   .container;
-  padding-bottom: 55px;
+  padding-top: 28px;
+  padding-bottom: 39px;
 
   h2 {
-    padding-top: 40px;
-    padding-bottom: 40px;
-
+    margin-bottom: 25px;
     .caption(18px);
   }
 
   address {
-    padding-bottom: 40px;
+    margin-bottom: 20px;
     font-style: normal;
+  }
+
+  .contacts__item {
+    margin-bottom: 34px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    span {
+      margin-right: 30px;
+    }
 
     a {
+      padding-bottom: 5px;
       line-height: 30px;
       border-bottom: 2px solid #62d1ba;
       .link(15, 400, #444444);
@@ -39,20 +51,23 @@
         opacity: 0.3;
       }
     }
-  }
 
-  p {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0;
-    width: 145px;
+    p {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: -2px;
+      width: 145px;
+      line-height: 30px;
+    }
   }
 
   > a {
     display: block;
-
-    .link(17, 700, #444444);
+    .link(18, 700, #444444);
     .button-style;
+    font-size: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
 
@@ -101,42 +116,61 @@
   }
 
   .contacts__wrap {
+    padding-bottom: 57px;
+    position: relative;
     display: flex;
     flex-direction: column;
+
+    h2 {
+      margin-bottom: 48px;
+      font-size: 43px;
+      line-height: 50px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 48px;
+        right: 53px;
+        width: 47px;
+        height: 81px;
+        background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='46.68px' height='81.691px' viewBox='-11.34 -28.346 46.68 81.691' enable-background='new -11.34 -28.346 46.68 81.691' xml:space='preserve'%3E%3Cg id='miu'%3E%3Cg id='Artboard-1' transform='translate%28-755.000000, -443.000000%29'%3E%3Cg id='slice' transform='translate%28215.000000, 119.000000%29'%3E%3C/g%3E%3Cg id='editor-flag-triangle-notification-glyph'%3E%3Cpath fill='%2363D1BB' d='M751.439,418.545v38.9l38.9-19.451L751.439,418.545z M743.66,496.346v-81.691h3.805v81.691H743.66z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Crect x='-11.34' y='-28.346' fill='%23231F20' width='3.805' height='81.691'/%3E%3C/g%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+      }
+    }
 
     address {
       display: flex;
       margin: auto;
-      padding-bottom: 60px;
+      margin-bottom: 56px;
     }
-  }
 
-  .contacts__wrap h2::after {
-    position: absolute;
-    content: "";
-    width: 47px;
-    height: 81px;
-    background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='46.68px' height='81.691px' viewBox='-11.34 -28.346 46.68 81.691' enable-background='new -11.34 -28.346 46.68 81.691' xml:space='preserve'%3E%3Cg id='miu'%3E%3Cg id='Artboard-1' transform='translate%28-755.000000, -443.000000%29'%3E%3Cg id='slice' transform='translate%28215.000000, 119.000000%29'%3E%3C/g%3E%3Cg id='editor-flag-triangle-notification-glyph'%3E%3Cpath fill='%2363D1BB' d='M751.439,418.545v38.9l38.9-19.451L751.439,418.545z M743.66,496.346v-81.691h3.805v81.691H743.66z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Crect x='-11.34' y='-28.346' fill='%23231F20' width='3.805' height='81.691'/%3E%3C/g%3E%3C/svg%3E%0A");
-    background-repeat: no-repeat;
-  }
+    > a {
+      margin: auto;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      width: 230px;
+      font-size: 17px;
+      box-sizing: border-box;
+    }
 
-  .contacts__wrap > a {
-        margin: auto;
-        padding-top: 18px;
-        padding-right: 41px;
-        padding-bottom: 18px;
-        padding-left: 39px;
+    .contacts__item {
+      width: 334px;
+
+      span {
+        font-size: 17px;
+        line-height: 30px;
+        margin-right: 22px;
       }
 
-  .contacts__item {
-    width: 334px;
+      p {
+        font-size: 17px;
+        margin: 0;
+        width: 220px;
+      }
 
-    span {
-      margin-right: 26px;
-    }
-
-    p {
-      width: 220px;
+      br {
+        display: block;
+      }
     }
   }
 
@@ -170,9 +204,18 @@
   }
 
   .contacts__wrap {
+    margin-top: 83px;
+    padding-bottom: 105px;
+
     h2 {
-      margin-top: 90px;
+      font-size: 53px;
+      line-height: 57px;
       padding-left: 175px;
+
+      &::after {
+        top: 63px;
+        left: 113px;
+      }
     }
 
     address {
@@ -181,38 +224,39 @@
       padding-left: 175px;
       width: 350px;
     }
-  }
 
-  .contacts__wrap > a {
-    align-self: flex-start;
-    margin-top: -75px;
-    margin-left: 175px;
+    > a {
+      align-self: flex-start;
+      margin-top: -75px;
+      margin-left: 175px;
+    }
   }
 
   .contacts__item {
     width: 350px;
-  }
 
-  .contacts__item:first-child {
-    margin-bottom: 38px;
+    &:first-of-type {
+      margin-bottom: 31px;
+    }
   }
 
   .contacts__map {
     align-self: flex-end;
     margin: 0;
-    margin-top: -335px;
+    margin-top: -327px;
+    margin-bottom: 23px;
     background: url("../../img/map-desktop@1x.jpg");
     width: 525px;
 
     iframe {
       width: 525px;
     }
-  }
 
-  @media (min-width: 1050px) and (min-resolution: 144dpi),
-         (min-width: 1050px) and (min-resolution: 1.5dppx) {
-           .contacts__map {
-             background: url("../../img/map-desktop@2x.jpg");
-           }
-    }
+    @media (min-width: 1050px) and (min-resolution: 144dpi),
+           (min-width: 1050px) and (min-resolution: 1.5dppx) {
+             .contacts__map {
+               background: url("../../img/map-desktop@2x.jpg");
+             }
+      }
+  }
 }
