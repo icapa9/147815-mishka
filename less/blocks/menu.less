@@ -1,8 +1,8 @@
 .menu__toggle {
   position: absolute;
-  display: block;
   top: 22px;
-  right: 21px;
+  right: 51px;
+  display: block;
   width: 40px;
   height: 34px;
   font-size: 0;
@@ -23,12 +23,11 @@
   background-repeat: no-repeat;
 }
 
-.menu--closed .menu__list {
-  display: none;
-}
-
-.menu--nojs .menu__list {
-  display: block;
+.menu--opened .menu__list {
+  z-index: 1;
+  position: absolute;
+  width: 320px;
+  background-color: @page-color;
 }
 
 .menu--opened .menu__toggle::before {
@@ -42,21 +41,29 @@
   background-repeat: no-repeat;
 }
 
+.menu--nojs .menu__list {
+  display: block;
+}
+
+.menu--closed .menu__list {
+  display: none;
+}
+
 .menu__list {
   .list-style;
 }
 
 .menu__item {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid @border-color;
 
   a {
     position: relative;
     display: block;
-    padding-right: 30px;
     padding-top: 27px;
+    padding-right: 30px;
     padding-bottom: 27px;
     padding-left: 76px;
-    // letter-spacing: 0.05em;
+    cursor: pointer;
 
     .link(17px; 700; #000000);
 
@@ -147,8 +154,8 @@
     margin-left: 320px;
     min-width: 82px;
     min-height: 88px;
-    border-left: 1px solid #ececec;
-    border-right: 1px solid #ececec;
+    border-left: 1px solid @border-color;
+    border-right: 1px solid @border-color;
 
     a {
       padding: 0;
@@ -214,7 +221,7 @@
 @media @desktop-widths {
   .menu__item:nth-of-type(1) {
     order: -4;
-    border-right: 1px solid #ececec;
+    border-right: 1px solid @border-color;
 
     a {
       padding-top: 32px;
@@ -224,8 +231,8 @@
     }
   }
   .menu__item:nth-of-type(2) {
-    padding-left: 35px;
     order: -3;
+    padding-left: 35px;
 
     a {
       padding-top: 32px;
@@ -234,8 +241,8 @@
     }
   }
   .menu__item:nth-of-type(3) {
-    margin-left: 292px;
     order: -2;
+    margin-left: 292px;
 
     a {
       &::before {
@@ -244,8 +251,8 @@
     }
   }
   .menu__item:nth-of-type(4) {
-    padding-left: 80px;
     order: -1;
+    padding-left: 80px;
 
     a {
       &::before {
@@ -270,7 +277,7 @@
 
   .menu__item:nth-of-type(5) {
     a {
-      padding-right: 20px;
+      padding-right: 36px;
     }
   }
 

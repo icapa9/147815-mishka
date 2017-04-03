@@ -49,8 +49,8 @@
             <div class="catalog__item-info">
               <a href="#"><h1>Зайчик-попрыгайчик</h1></a>
               <p>Рост 30 см, вес 200 г</p>
-              <span>1200 руб.</span>
-              <a href="#"></a>
+              <span>1 200 руб.</span>
+              <a class="link-popup" href="#"></a>
             </div>
           </article>
           <article class="catalog__item">
@@ -67,12 +67,12 @@
               <a href="#"><h1>Корзинка для белья</h1></a>
               <p>Диаметр 15 см, высота 10 см</p>
               <span>690 руб.</span>
-              <a href="#"></a>
+              <a class="link-popup" href="#"></a>
             </div>
           </article>
           <article class="catalog__item">
             <div class="catalog__item-image">
-              <a href="#">
+              <a class="link-popup" href="#">
                 <picture>
                   <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg, img/photo-3-desktop@2x.jpg">
                   <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg, img/photo-3-tablet@2x.jpg">
@@ -83,8 +83,8 @@
             <div class="catalog__item-info">
               <a href="#"><h1>Большая корзинка для игрушек</h1></a>
               <p>Диаметр 30 см, высота 30 см</p>
-              <span>1500 руб.</span>
-              <a href="#"></a>
+              <span>1 500 руб.</span>
+              <a class="link-popup" href="#"></a>
             </div>
           </article>
         </div>
@@ -102,7 +102,7 @@
           <div class="production__info">
             <h2>Процесс производства</h2>
             <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
-            <a href="#">Сделать заказ</a>
+            <a class="link-popup" href="#">Сделать заказ</a>
           </div>
         </div>
       </section>
@@ -110,7 +110,7 @@
     <footer class="footer">
       <div class="footer__wrap">
         <div class="logo">
-          <a href="index.html"><img src="img/logo-footer.svg" width="102" height="34" alt="footer-logo"></a>
+          <a href="index.html">logo</a>
         </div>
         <ul class="socials">
           <li><a href="#">inst</a></li>
@@ -140,6 +140,8 @@
     <script>
     var menu = document.querySelector(".menu");
     var menuToggle = document.querySelector(".menu__toggle");
+    var popup = document.querySelector(".popup");
+    var link = document.querySelector(".link-popup");
 
     menuToggle.addEventListener("click", function() {
 
@@ -153,6 +155,12 @@
         menu.classList.remove("menu--opened");
       }
     });
+
+    link.addEventListener("click", function() {
+      event.preventDefault();
+      popup.classList.add("popup--opened");
+    });
+
     </script>
   </body>
 </html>

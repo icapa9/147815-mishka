@@ -18,7 +18,7 @@
             </picture>
           </a>
         </div>
-        <div class="menu menu--opened menu--nojs">
+        <div class="menu menu--closed menu--nojs">
           <ul class="menu__list">
             <li class="menu__item"><a href="catalog.html">Каталог товаров</a></li>
             <li class="menu__item"><a href="form.html">Вязание на заказ</a></li>
@@ -75,7 +75,7 @@
               </picture>
             </a>
             <span>Цена: 990руб.</span>
-            <a href="#">заказать</a>
+            <a class="link-popup" href="#">заказать</a>
           </article>
         </div>
       </section>
@@ -103,8 +103,8 @@
             </blockquote>
           </article>
           <div class="reviews__controls">
-            <button class="button  button--prev" type="button" name="button"></button><!--
-          --><button class="button  button--next" type="button" name="button"></button>
+            <button type="button" name="button"></button><!--
+          --><button type="button" name="button"></button>
           </div>
           <a href="#">написать</a>
         </div>
@@ -162,6 +162,8 @@
     <script>
     var menu = document.querySelector(".menu");
     var menuToggle = document.querySelector(".menu__toggle");
+    var popup = document.querySelector(".popup");
+    var link = document.querySelector(".link-popup");
 
     menuToggle.addEventListener("click", function() {
 
@@ -175,6 +177,12 @@
         menu.classList.remove("menu--opened");
       }
     });
+
+    link.addEventListener("click", function() {
+      event.preventDefault();
+      popup.classList.add("popup--opened");
+    });
+
     </script>
   </body>
 </html>
