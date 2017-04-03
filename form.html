@@ -79,7 +79,7 @@
                   <label for="name">Имя:</label>
                   <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
                   <label for="surname">Фамилия:</label>
-                  <input type="text" name="surname" id="surname" placeholder="Введите вашу фамилию*" required>
+                  <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
                   <label for="middle-name">Отчество:</label>
                   <input type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
                 </div>
@@ -118,7 +118,7 @@
     <footer class="footer">
       <div class="footer__wrap">
         <div class="logo">
-          <a href="index.html"><img src="img/logo-footer.svg" width="102" height="34" alt="footer-logo"></a>
+          <a href="index.html">logo</a>
         </div>
         <ul class="socials">
           <li><a href="#">inst</a></li>
@@ -130,22 +130,7 @@
         </div>
       </div>
     </footer>
-    <script>
-    var menu = document.querySelector(".menu");
-    var menuToggle = document.querySelector(".menu__toggle");
-
-    menuToggle.addEventListener("click", function() {
-
-      menu.classList.remove("menu--nojs");
-
-      if (menu.classList.contains("menu--closed")) {
-        menu.classList.remove("menu--closed");
-        menu.classList.add("menu--opened");
-      } else {
-        menu.classList.add("menu--closed");
-        menu.classList.remove("menu--opened");
-      }
-    });
+    <script src="js/script.js">
     </script>
   </body>
 </html>

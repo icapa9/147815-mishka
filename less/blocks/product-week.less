@@ -1,107 +1,206 @@
 .product-week__wrap {
+  padding-top: 28px;
+  padding-bottom: 35px;
   .container;
-  h1 {
-    .caption(25px);
-  }
 }
 
 .product-week__item {
   position: relative;
-}
 
-.product-week__item {
-  a img {
-    display: block;
-    max-width: 100%;
+  h1 {
+    .caption(25px);
+    margin: 0 0 6px;
+    line-height: 30px;
+  }
+
+  span {
+    &:nth-of-type(1) {
+      display: block;
+      margin-bottom: 22px;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #63d1bb;
+      text-transform: uppercase;
+    }
+
+    &:nth-of-type(2) {
+      display: block;
+      margin-bottom: 26px;
+      text-align: center;
+      font-size: 17px;
+      .link(17,700,#444444);
+    }
+  }
+
+  p {
+    margin-bottom: 17px;
+    padding-right: 20px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  a {
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    &:nth-of-type(1) {
+      display: block;
+      margin-bottom: 24px;
+    }
+
+    &:nth-of-type(2) {
+      display: block;
+      .link(17, 700, #444444);
+      .button-style;
+      font-style: 17px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
   }
 }
 
-.product-week__item span:nth-of-type(2) {
-  display: block;
+.product-week__info-table {
   margin-bottom: 28px;
-  text-align: center;
+  border-collapse: collapse;
+
+  td {
+    height: 37px;
+    border-bottom: 1px solid @border-color;
+
+    &:first-child {
+      width: 96px;
+    }
+
+    &:last-child {
+      width: 164px;
+    }
+  }
 }
-
-.product-week__item a:nth-of-type(1) {
-  display: block;
-  margin-bottom: 30px;
-}
-
-.product-week__item a:nth-of-type(2) {
-  display: block;
-
-  .link(17, 700, #444444);
-  .button-style;
-}
-
 @media @tablet-widths {
   .product-week__wrap {
-    padding-top: 52px;
+    padding-top: 46px;
     padding-bottom: 52px;
   }
 
   .product-week__item {
+    position: relative;
     display: flex;
     flex-direction: column;
+
+    h1 {
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    span {
+      &:nth-of-type(1) {
+        align-self: flex-end;
+        margin-top: -45px;
+        margin-bottom: 37px;
+        padding-right: 28px;
+        padding-left: 40px;
+        width: 70px;
+        line-height: 17px;
+        text-align: center;
+      }
+
+      &:nth-of-type(2) {
+        margin-bottom: 33px;
+        padding-left: 42px;
+        width: 200px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+
+    p {
+      margin-bottom: 36px;
+      padding-right: 52px;
+      width: 334px;
+      font-size: 17px;
+      line-height: 30px;
+      box-sizing: border-box;
+    }
+
+    a {
+      &:nth-of-type(1) {
+        position: absolute;
+        top: 106px;
+        right: 1px;
+      }
+
+      &:nth-of-type(2) {
+        width: 292px;
+        .button-style;
+        box-sizing: border-box;
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+    }
   }
 
-  .product-week__info {
-    margin-top: 40px;
-    width: 334px;
-  }
+  .product-week__info-table {
+    margin-bottom: 56px;
 
-  .product-week__item span:nth-of-type(1) {
-    align-self: flex-end;
-    margin-top: -47px;
-    padding-right: 28px;
-    padding-left: 28px;
-    width: 50px;
-  }
+    td {
+      height: 37px;
+      border-bottom: 1px solid @border-color;
 
-  .product-week__item span:nth-of-type(2) {
-    align-self: flex-start;
-    margin-top: -100px;
-    margin-bottom: 34px;
-    width: 334px;
-    text-align: center;
-  }
+      &:first-child {
+        width: 96px;
+      }
 
-  .product-week__item a:nth-of-type(1) {
-    align-self: flex-end;
-    margin-top: -172px;
-  }
-
-  .product-week__item a:nth-of-type(2) {
-    align-self: flex-start;
-    padding-top: 18px;
-    padding-right: 95px;
-    padding-bottom: 18px;
-    padding-left: 103px;
+      &:last-child {
+        width: 195px;
+      }
+    }
   }
 }
-
 @media @desktop-widths {
   .product-week__wrap {
-    padding-top: 72px;
-    padding-bottom: 72px;
+    padding-top: 139px;
+    padding-bottom: 73px;
   }
 
   .product-week__item {
     padding-left: 175px;
+
     h1 {
+      z-index: 1;
       margin-top: -48px;
+      padding-bottom: 25px;
+      font-size: 53px;
+      line-height: 57px;
+    }
+
+    span {
+      &:nth-of-type(1) {
+        order: -1;
+        align-self: flex-start;
+        margin: 0 0 0 -175px;
+        padding-right: 50px;
+        width: 175px;
+        box-sizing: border-box;
+      }
+
+      &:nth-of-type(2) {}
+    }
+
+    p {
+      margin-bottom: 48px;
+    }
+
+    a {
+      &:nth-of-type(1) {
+        top: -68px;
+      }
     }
   }
 
-  .product-week__item span:nth-of-type(1) {
-    order: -1;
-    align-self: flex-start;
-    margin: 0;
-    margin-left: -175px;
-    padding-right: 50px;
-    // padding-left: 175px;
-    width: 175px;
-    text-align: center;
-    box-sizing: border-box;
+  .product-week__info-table {
+    margin-bottom: 110px;
   }
 }

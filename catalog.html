@@ -40,26 +40,26 @@
             <div class="catalog__item-image">
               <a href="#">
                 <picture>
-                  <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg, img/photo-1-desktop@2x.jpg">
-                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg, img/photo-1-tablet@2x.jpg">
-                  <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg" alt="catalog-item">
+                  <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                  <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="catalog-item">
                 </picture>
               </a>
             </div>
             <div class="catalog__item-info">
               <a href="#"><h1>Зайчик-попрыгайчик</h1></a>
               <p>Рост 30 см, вес 200 г</p>
-              <span>1200 руб.</span>
-              <a href="#"></a>
+              <span>1 200 руб.</span>
+              <a class="link-popup" href="cart.html"></a>
             </div>
           </article>
           <article class="catalog__item">
             <div class="catalog__item-image">
               <a href="#">
                 <picture>
-                  <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg, img/photo-2-desktop@2x.jpg">
-                  <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg, img/photo-2-tablet@2x.jpg">
-                  <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg" alt="catalog-item">
+                  <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                  <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="catalog-item">
                 </picture>
               </a>
             </div>
@@ -67,24 +67,24 @@
               <a href="#"><h1>Корзинка для белья</h1></a>
               <p>Диаметр 15 см, высота 10 см</p>
               <span>690 руб.</span>
-              <a href="#"></a>
+              <a class="link-popup" href="#"></a>
             </div>
           </article>
           <article class="catalog__item">
             <div class="catalog__item-image">
-              <a href="#">
+              <a class="link-popup" href="cart.html">
                 <picture>
-                  <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg, img/photo-3-desktop@2x.jpg">
-                  <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg, img/photo-3-tablet@2x.jpg">
-                  <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg" alt="catalog-item">
+                  <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                  <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="catalog-item">
                 </picture>
               </a>
             </div>
             <div class="catalog__item-info">
               <a href="#"><h1>Большая корзинка для игрушек</h1></a>
               <p>Диаметр 30 см, высота 30 см</p>
-              <span>1500 руб.</span>
-              <a href="#"></a>
+              <span>1 500 руб.</span>
+              <a class="link-popup" href="cart.html"></a>
             </div>
           </article>
         </div>
@@ -93,16 +93,16 @@
         <div class="production__wrap">
           <div class="production__video">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg">
-              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg.jpg">
-              <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" alt="catalog-video">
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg. 2x">
+              <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="catalog-video">
             </picture>
             <button type="button" name="button"></button>
           </div>
           <div class="production__info">
             <h2>Процесс производства</h2>
             <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
-            <a href="#">Сделать заказ</a>
+            <a class="link-popup" href="#">Сделать заказ</a>
           </div>
         </div>
       </section>
@@ -110,7 +110,7 @@
     <footer class="footer">
       <div class="footer__wrap">
         <div class="logo">
-          <a href="index.html"><img src="img/logo-footer.svg" width="102" height="34" alt="footer-logo"></a>
+          <a href="index.html">logo</a>
         </div>
         <ul class="socials">
           <li><a href="#">inst</a></li>
@@ -137,22 +137,7 @@
         </div>
       </form>
     </section>
-    <script>
-    var menu = document.querySelector(".menu");
-    var menuToggle = document.querySelector(".menu__toggle");
-
-    menuToggle.addEventListener("click", function() {
-
-      menu.classList.remove("menu--nojs");
-
-      if (menu.classList.contains("menu--closed")) {
-        menu.classList.remove("menu--closed");
-        menu.classList.add("menu--opened");
-      } else {
-        menu.classList.add("menu--closed");
-        menu.classList.remove("menu--opened");
-      }
-    });
+    <script src="js/script.js">
     </script>
   </body>
 </html>

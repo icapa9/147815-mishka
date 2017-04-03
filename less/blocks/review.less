@@ -1,12 +1,25 @@
 .review__text {
-  margin: 0;
-  margin-bottom: 36px;
+  margin: 0 0 29px;
+  line-height: 30px;
+
+  p {
+    margin-bottom: 27px;
+  }
 
   h1 {
-    .caption();
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  cite {
+    font-style: normal;
+  }
+
+  br {
+    display: none;
   }
 }
-
 @media @tablet-widths {
   .review {
     display: flex;
@@ -15,12 +28,28 @@
 
   .review__text {
     width: 668px;
+
+    p {
+      margin-bottom: 58px;
+      font-size: 17px;
+    }
+
+    h1 {
+      font-size: 17px;
+    }
   }
 }
-
 @media @desktop-widths {
   .review__text {
     padding-left: 175px;
     width: 780px;
+
+    p {
+      margin-bottom: 23px;
+    }
+
+    br {
+      display: block;
+    }
   }
 }
