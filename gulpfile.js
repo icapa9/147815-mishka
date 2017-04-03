@@ -24,7 +24,7 @@ gulp.task("style", function() {
       ]}),
       mqpacker({
         sort: true
-      })
+        })
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
