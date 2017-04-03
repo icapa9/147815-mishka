@@ -77,12 +77,10 @@
   margin-left: -30px;
   width: 320px;
   height: 457px;
-  background: url("../../img/map-mobile@1x.jpg");
-
-
+  background: #ececec url("../img/map-mobile@1x.jpg");
   @media (min-width: 260px) and (min-resolution: 144dpi), (min-width: 260px) and (min-resolution: 1.5dppx) {
     .contacts__map {
-      background: url("../../img/map-mobile@2x.jpg");
+      background: #ececec url("../img/map-mobile@2x.jpg");
     }
   }
 
@@ -105,7 +103,6 @@
     background-repeat: no-repeat;
   }
 }
-
 @media @tablet-widths {
   .contacts::before {
     position: absolute;
@@ -141,8 +138,7 @@
 
     address {
       display: flex;
-      margin: auto;
-      margin-bottom: 56px;
+      margin: auto auto 56px;
     }
 
     > a {
@@ -176,25 +172,21 @@
   }
 
   .contacts__map {
-    margin: auto;
-    margin-bottom: 55px;
-    margin-left: -50px;
+    margin: auto auto 55px -50px;
     width: 768px;
     height: 457px;
-    background: url("../../img/map-tablet@1x.jpg");
+    background: #ececec url("../img/map-tablet@1x.jpg");
 
     iframe {
       width: 768px;
     }
   }
-
   @media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
     .contacts__map {
-      background: url("../../img/map-tablet@2x.jpg");
+      background: #ececec url("../img/map-tablet@2x.jpg");
     }
   }
 }
-
 @media @desktop-widths {
   .contacts::before {
     position: absolute;
@@ -244,19 +236,16 @@
 
   .contacts__map {
     align-self: flex-end;
-    margin: 0;
-    margin-top: -327px;
-    margin-bottom: 23px;
-    background: url("../../img/map-desktop@1x.jpg");
+    margin: -327px 0 23px;
+    background: #ececec url("../img/map-desktop@1x.jpg");
     width: 525px;
 
     iframe {
       width: 525px;
     }
-
     @media (min-width: 1050px) and (min-resolution: 144dpi), (min-width: 1050px) and (min-resolution: 1.5dppx) {
-       .contacts__map {
-        background: url("../../img/map-desktop@2x.jpg");
+      .contacts__map {
+        background: url("../img/map-desktop@2x.jpg");
       }
     }
   }

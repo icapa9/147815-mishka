@@ -6,8 +6,7 @@
   h1 {
     .caption;
     order: -2;
-    margin: 0;
-    margin-bottom: 24px;
+    margin: 0 0 24px;
   }
 
   a {
@@ -54,20 +53,18 @@
     }
   }
 }
-
 @media @tablet-widths {
   .reviews__wrap {
     position: relative;
     display: flex;
     flex-direction: column;
-
     padding-top: 78px;
     padding-bottom: 5px;
-    background: url("../../img/review@1x.jpg") no-repeat;
+    background: url("../img/review@1x.jpg") no-repeat;
     min-height: 457px;
 
     h1 {
-      margin-bottom: 0px;
+      margin-bottom: 0;
       font-size: 43px;
       line-height: 50px;
     }
@@ -86,12 +83,10 @@
       font-size: 17px;
     }
   }
-
-  @media (min-width: 660px) and (min-resolution: 144dpi),
-        (min-width: 660px) and (min-resolution: 1.5dppx) {
-           .reviews__wrap {
-             background: url("../../img/review@2x.jpg");
-           }
+  @media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+    .reviews__wrap {
+      background: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__controls {
@@ -112,7 +107,6 @@
     }
   }
 }
-
 @media @desktop-widths {
   .reviews__wrap {
     padding-top: 72px;
