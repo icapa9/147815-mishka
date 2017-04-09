@@ -67,6 +67,7 @@
       margin-bottom: 0;
       font-size: 43px;
       line-height: 50px;
+      margin-left: -5px;
     }
 
     a {
@@ -85,18 +86,19 @@
   }
   @media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
     .reviews__wrap {
-      background: url("../img/review@2x.jpg");
-      background-size: contain;
+      background: url("../img/review@2x.jpg") no-repeat;
+      background-size: 350px auto;
     }
   }
 
   .reviews__controls {
-    margin-top: -93px;
-    margin-left: auto;
+    margin-top: -84px;
+    margin-left: 503px;
     margin-bottom: 85px;
 
     button {
       width: 83px;
+      border: none;
 
       &:first-child {
         background-position: 8px 12px;
@@ -122,5 +124,9 @@
     a {
       margin-top: -50px;
     }
+  }
+
+  .reviews__controls {
+    margin-left: 885px;
   }
 }

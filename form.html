@@ -87,22 +87,22 @@
             </div>
             <div class="form__tel">
               <div class="form__tel-wrap">
-                <h2>тел</h2>
-                <input type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
+                <label for="tel">тел</label>
+                <input type="tel" name="tel" placeholder="+7 XXX XX XX*" id="tel" required>
                 <span></span>
               </div>
             </div>
             <div class="form__email">
               <div class="form__email-wrap">
-                <h2>e-mail</h2>
-                <input type="email" name="email" placeholder="Ваш Email*" required>
+                <label for="email">e-mail</label>
+                <input type="email" name="email" placeholder="Ваш Email*" id="email" required>
                 <span></span>
               </div>
             </div>
             <div class="form__add-info">
               <div class="form__add-info-wrap">
-                <h2>доп</h2>
-                <textarea name="add-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                <label for="add-info">доп</label>
+                <textarea name="add-info" placeholder="Опишите все ваши пожелания к заказу" id="add-info"></textarea>
               </div>
             </div>
             <div class="form__submit">
@@ -132,5 +132,6 @@
     </footer>
     <script src="js/script.js">
     </script>
+    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.js"></script>
   </body>
 </html>

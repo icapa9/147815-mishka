@@ -1,52 +1,60 @@
-.menu__toggle {
-  position: absolute;
-  top: 22px;
-  right: 51px;
-  display: block;
-  width: 40px;
-  height: 34px;
-  font-size: 0;
-  border: none;
-  background: #ffffff;
-  cursor: pointer;
-  outline: none;
-}
+@media @mobile-widths {
+  .menu__toggle {
+    position: absolute;
+    top: 22px;
+    right: 21px;
+    display: block;
+    width: 40px;
+    height: 34px;
+    font-size: 0;
+    border: none;
+    background: #ffffff;
+    cursor: pointer;
+    outline: none;
+  }
 
-.menu--closed .menu__toggle::before {
-  position: absolute;
-  content: "";
-  top: 10px;
-  left: 10px;
-  width: 20px;
-  height: 14px;
-  background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='19.958px' height='14px' viewBox='0 0 19.958 14' enable-background='new 0 0 19.958 14' xml:space='preserve'%3E%3Crect fill='%23231F20' width='19.958' height='2'/%3E%3Crect y='6' fill='%23231F20' width='19.958' height='2'/%3E%3Crect y='12' fill='%23231F20' width='19.958' height='2'/%3E%3C/svg%3E ");
-  background-repeat: no-repeat;
-}
+  .menu--closed .menu__toggle::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 14px;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='19.958px' height='14px' viewBox='0 0 19.958 14' enable-background='new 0 0 19.958 14' xml:space='preserve'%3E%3Crect fill='%23231F20' width='19.958' height='2'/%3E%3Crect y='6' fill='%23231F20' width='19.958' height='2'/%3E%3Crect y='12' fill='%23231F20' width='19.958' height='2'/%3E%3C/svg%3E ");
+    background-repeat: no-repeat;
+  }
 
-.menu--opened .menu__list {
-  z-index: 1;
-  position: absolute;
-  width: 320px;
-  background-color: @page-color;
-}
+  .menu--opened .menu__list {
+    z-index: 1;
+    position: absolute;
+    width: 320px;
+    background-color: @page-color;
+  }
 
-.menu--opened .menu__toggle::before {
-  position: absolute;
-  content: "";
-  top: 6px;
-  left: 10px;
-  width: 21px;
-  height: 20px;
-  background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='20.514px' height='20.512px' viewBox='0 0 20.514 20.512' enable-background='new 0 0 20.514 20.512' xml:space='preserve'%3E%3Cpolygon fill='%23231F20' points='20.513,1.414 19.099,0 10.256,8.842 1.414,0 0,1.414 8.842,10.256 0,19.098 1.414,20.512 10.256,11.67 19.099,20.512 20.513,19.098 11.671,10.256 '/%3E%3C/svg%3E ");
-  background-repeat: no-repeat;
-}
+  .menu--opened .menu__toggle::before {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 10px;
+    width: 21px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='20.514px' height='20.512px' viewBox='0 0 20.514 20.512' enable-background='new 0 0 20.514 20.512' xml:space='preserve'%3E%3Cpolygon fill='%23231F20' points='20.513,1.414 19.099,0 10.256,8.842 1.414,0 0,1.414 8.842,10.256 0,19.098 1.414,20.512 10.256,11.67 19.099,20.512 20.513,19.098 11.671,10.256 '/%3E%3C/svg%3E ");
+    background-repeat: no-repeat;
+  }
 
-.menu--nojs .menu__list {
-  display: block;
-}
+  .menu--closed .menu__list {
+    display: none;
+  }
 
-.menu--closed .menu__list {
-  display: none;
+  .menu--nojs {
+    .menu__list {
+      display: block;
+    }
+
+    .menu__toggle {
+      display: none;
+    }
+  }
 }
 
 .menu__list {
@@ -172,7 +180,7 @@
 
       &::before {
         top: 35px;
-        left: -63px;
+        left: -52px;
       }
     }
   }
@@ -182,7 +190,7 @@
     z-index: 1;
 
     a {
-      padding: 18px 44px 18px 0;
+      padding: 18px 36px 18px 0;
       font-size: 15px;
     }
   }
@@ -226,7 +234,7 @@
 
   .menu__item:nth-of-type(3) {
     order: -2;
-    margin-left: 282px;
+    margin-left: 289px;
 
     a {
       &::before {
@@ -241,7 +249,7 @@
 
     a {
       &::before {
-        left: -51px;
+        left: -54px;
       }
     }
   }
