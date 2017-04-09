@@ -38,7 +38,7 @@
         <div class="catalog__wrap">
           <article class="catalog__item">
             <div class="catalog__item-image">
-              <a href="#">
+              <a href="cart.html">
                 <picture>
                   <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
@@ -50,12 +50,12 @@
               <a href="#"><h1>Зайчик-попрыгайчик</h1></a>
               <p>Рост 30 см, вес 200 г</p>
               <span>1 200 руб.</span>
-              <a class="link-popup" href="cart.html"></a>
+              <a class="modal" href="cart.html"></a>
             </div>
           </article>
           <article class="catalog__item">
             <div class="catalog__item-image">
-              <a href="#">
+              <a href="cart.html">
                 <picture>
                   <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
@@ -67,12 +67,12 @@
               <a href="#"><h1>Корзинка для белья</h1></a>
               <p>Диаметр 15 см, высота 10 см</p>
               <span>690 руб.</span>
-              <a class="link-popup" href="#"></a>
+              <a class="modal" href="cart.html"></a>
             </div>
           </article>
           <article class="catalog__item">
             <div class="catalog__item-image">
-              <a class="link-popup" href="cart.html">
+              <a href="cart.html">
                 <picture>
                   <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
@@ -84,7 +84,7 @@
               <a href="#"><h1>Большая корзинка для игрушек</h1></a>
               <p>Диаметр 30 см, высота 30 см</p>
               <span>1 500 руб.</span>
-              <a class="link-popup" href="cart.html"></a>
+              <a class="modal" href="cart.html"></a>
             </div>
           </article>
         </div>
@@ -94,15 +94,15 @@
           <div class="production__video">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg. 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="catalog-video">
             </picture>
             <button type="button" name="button"></button>
           </div>
           <div class="production__info">
             <h2>Процесс производства</h2>
-            <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
-            <a class="link-popup" href="#">Сделать заказ</a>
+            <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a href="#">Сделать заказ</a>
           </div>
         </div>
       </section>
@@ -125,13 +125,13 @@
     <section class="popup">
       <form class="popup__form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="popup__form-wrap">
-          <h1>добавить в корзину</h1>
+          <h1>добавить<br> в корзину</h1>
           <span>Выберете размер:</span>
-          <input type="radio" name="s" id="s" required>
-          <input type="radio" name="s" id="m" required>
-          <input type="radio" name="s" id="l" required>
+          <input type="radio" name="size" id="s" value="S" required>
           <label for="s">s</label>
+          <input type="radio" name="size" id="m" value="M" required>
           <label for="m">m</label>
+          <input type="radio" name="size" id="l" value="L" required>
           <label for="l">l</label>
           <button type="submit">добавить</button>
         </div>
@@ -139,5 +139,6 @@
     </section>
     <script src="js/script.js">
     </script>
+    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.js"></script>
   </body>
 </html>
